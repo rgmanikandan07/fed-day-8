@@ -604,8 +604,51 @@ for(i=1; i<n; i++){
 	console.log(n+ "*" +i+ "=" +b+ "<br/>");
 }*/
 
+//reverse the given number in words //
+	/*let given=[1,2,3,4,5];
+    let y=given.reverse();
+	   console.log(y);
+	
+	for(let i=0;i<reverse.length;i++){
+		switch(reverse[i]){
+				case 1:
+				console.log("one");
+				break;
+				case 2:
+				console.log("two");
+				break;
+				case 3:
+				console.log("three");
+				break;
+				case 4:
+				console.log("four");
+				break;
+				case 5:
+				console.log("five");
+				break;
+				case 6:
+				console.log("six");
+				break;
+				case 7:
+				console.log("seven");
+				break;
+				case 8:
+				console.log("eight");
+				break;
+				case 9:
+				console.log("nine");
+				break;
+				case 0:
+				console.log("zero");
+				break;
+			}
+		}*/
+
+
+  /* // STRING METHOD //
 var s1 = "mahendra sing DHONI";
 var s2 = "PROUD OF MSDIAN";
+var s3 = "mani"
 //charAt()
 console.log(s1.charAt(6));
 //charCodeAt()
@@ -628,6 +671,8 @@ console.log(s1.repeat(3));
 //replace()
 console.log(s1.replace(/sing/g,"SING"));
 console.log(s1.replace(/DHONI/i,"dhoni"));
+//replace//
+console.log(s1.replace("sing","s"));
 //search()
 console.log(s1.search("sing"));
 //slice()
@@ -638,7 +683,7 @@ console.log(s1.split(""));
 console.log(s1.substr(3,4));
 //substring()
 console.log(s1.substring(2,5));
-//toUpperCase()
+//toUpperCase()  
 console.log(s1.toUpperCase());
 //toLowerCase()
 console.log(s2.toLowerCase());
@@ -646,25 +691,65 @@ console.log(s2.toLowerCase());
 console.log(s2.trim());
 //includes()
 console.log(s1.includes("z"));
+//padEnd//
+console.log(s1.padStart(5,'0'));*/
+				
 				
 				
 			
-/*let givenDate = new Date();
-givenDate.setDate(13-03-2022);
-
-  if(givenDate.getDate()==0 || givenDate.getDate()==6){
-    console.log("weekend");
-  }
-  else{
-    console.log("not weekend");
-  }*/
-  
-  
  /* var x = "manikandan";
 
    console.log(x.substring(3,6));*/
+   
+   
+    /*let a = new Date();
+      a.setDate(24);
+      a.getDate();
+      a.setMonth(9);
+	  a.getMonth();
+    let b = a.getDay();
+      console.log(b);
+	  
+	if((b==0)||(b==6)){
+	    console.log("weekend");
+	}  
+	else{
+	    console.log("not weekend");
+	}*/
   
   
+  //you're the caption of a pirate ship and would like to calculate whether your trip was a success. you are given two parameters - gold and pirates. the trip is a success if there is atleast as much gold as pirates.however if gold+pirates > 100 then the trip is a failure. since the ship may sink.Return true if the ship was a success and false if it was a failure//
+  
+    /*let gold = 40;
+    let pirates = 30;
+  
+    if(gold > pirates)
+       if(gold + pirates > 100){
+	      console.log("failure");
+	}
+	else{
+	    console.log("success");
+	}*/
+	
+	//sum of N numbers//
+	/*function sum(n){
+	let x = 0;
+	    for(i=1; i<= n; i++)
+	      x = x + i;
+		  return x; 
+	}
+	let n =prompt("enter number");
+	console.log(sum(n));*/
+	
+	let x = prompt("enter number");
+	let y = prompt("enter number");
+	
+	[x,y]=[y,x];
+	console.log("+x+","+y+");
+	
+	
+	
+	
   
 			
     </script>
