@@ -702,7 +702,7 @@ console.log(s1.padStart(5,'0'));*/
    console.log(x.substring(3,6));*/
    
 // weekend or notweekend //   
-  let a = new Date();
+  /*let a = new Date();
 	a.setMonth(8);
 	 a.getMonth();
     a.setDate(24);
@@ -718,7 +718,7 @@ console.log(s1.padStart(5,'0'));*/
 	}  
 	else{
 	    console.log("not weekend");
-	}
+	}*/
     
   
   //you're the caption of a pirate ship and would like to calculate whether your trip was a success. you are given two parameters - gold and pirates. the trip is a success if there is atleast as much gold as pirates.however if gold+pirates > 100 then the trip is a failure. since the ship may sink.Return true if the ship was a success and false if it was a failure//
@@ -748,13 +748,66 @@ console.log(s1.padStart(5,'0'));*/
 	let y = prompt("enter number");
 	
 	[x,y]=[y,x];
-	console.log("+x+","+y+");*/
+	console.log(x,y);*/
+	
+	
+	/*for (i=1; i<=100; i++){
+        if((i%3)==0){   
+            console.log("Fiz"); 
+        }			
+        else if((i%5)==0){   
+            console.log("Buz");  
+        }			
+        else if((i%3==0)&&(i%5==0)){                      
+           console.log("FizzBuz");                
+        }
+		else{  
+		   console.log(i);
+		}
+	}*/
+    
+	
+	/*let i = 1;
+	while(i<100){
+	   if(i%3==0 && i%5==0){
+	    console.log("FizBuzz");
+	   }
+	   else if(i%3==0){
+	    console.log("Fiz");
+	   }
+	   else if(i%5==0){
+	    console.log("Buz");
+	   }
+	   else{
+	    console.log(i);
+	   }
+	   i++;
+	}*/
 	
 	
 	
 	
+   
+        
+   /*time different*/   
+  let first = new Date("october 2, 2022, 12:00:00");
+    let time = first.getTime();
+	
+  let second = new Date("october 3, 2022, 12:00:00");
+    let time1 = second.getTime();
+	
+  let total = time1-time;
+    console.log(total);
+  let x = total/(1000*60*60);
+    console.log(x);
 	
 	
+	/*let x = (currentValue) => currentValue < 20;
+	let y = [1,12,14,16,2];
+	console.log(y.every(x));*/
+	
+	
+  
 	
 	
   
