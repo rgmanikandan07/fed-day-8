@@ -790,7 +790,7 @@ console.log(s1.padStart(5,'0'));*/
    
         
    /*time different*/   
-  let first = new Date("october 2, 2022, 12:00:00");
+  /*let first = new Date("october 2, 2022, 12:00:00");
     let time = first.getTime();
 	
   let second = new Date("october 3, 2022, 12:00:00");
@@ -799,12 +799,116 @@ console.log(s1.padStart(5,'0'));*/
   let total = time1-time;
     console.log(total);
   let x = total/(1000*60*60);
-    console.log(x);
+    console.log(x);*/
 	
 	
-	/*let x = (currentValue) => currentValue < 20;
-	let y = [1,12,14,16,2];
-	console.log(y.every(x));*/
+	// forEach //
+	var Obj={ 'a': 1, 
+	          'b': 2, 
+		      'c': 3 
+			};
+    Object.keys(Obj).forEach(function(key, index) {
+         Obj[key] *= 2;
+    });
+       console.log(Obj);
+	   
+	   
+	   
+	   
+	// Map //
+	var Obj =[{name:'Dhoni',team:'india'},
+	         {name:'ABD',team:'SA'}];
+			 
+        Obj.map(getFullName);
+		function getFullName(x){
+		  return [x.name,x.team].join("");
+		  }
+	
+	
+	
+	//Entries //
+	 const x =  { table: 'furniture', 
+	              chair: 'steel',
+                  count: '10'
+			    };
+         console.log(Object.entries(x));
+	 
+	 
+	 // filter //
+	 
+	let players = [
+         { name: 'Dhoni', role: 'Batter' },
+         { name: 'Jadeja', role: 'all-rounder'},
+         { name: 'Deepak', role: 'Bowler' },
+		 { name: 'Bravo', role: 'all-rounder'},
+    ]
+
+        cricketer = players.filter(player => player.role == 'all-rounder');
+            console.log(cricketer);
+	
+	
+	// find //
+	
+	let obj =[{name:'Dhoni',age:'40',team:'india',num:'7'},
+	          {name:'ABD',age:'40',team:'SA',num:'17'},
+			  {name:'virat',age:'36',team:'india',num:'18'}];
+			  
+			let  newobj = obj.find(x => x.name === prompt("enter"));
+			  console.log(newobj);
+			  
+			  
+			  
+			  
+    // reduce //
+			  
+			const x = { 
+                      a: 1,
+                      b: 3,
+                      c: 3
+                            }
+            const total = Object.values(x).reduce((a, b) => a + b)
+                console.log(total);
+					
+					
+					// reduceRight //
+					/*let x = [{
+		                    a: 1,
+                            b: 5,
+                            c: 3,
+							d: 4
+					}];/*
+					
+					
+					
+					// pop //
+					/*let key = prompt("enter");
+                        obj = {a:1,
+						       b:9,
+						       c:4,
+							   d:8
+							  }
+                         val = obj[key] 
+                           delete obj[key]
+
+                        console.log(profile, key, val); */
+					
+					
+
+					// some //
+					/*var persons = [{name: "dhoni"},
+					               {name: "raina"},
+					               {name: "yuvi"}];
+						var result = (persons.some(person => person.name === "dhoni"))
+						    console.log(result);*/
+					
+					
+					
+					 
+
+	
+	
+	
+	
 	
 	
   
